@@ -1,6 +1,6 @@
 import requests
 
-URL="http://localhost:11434/api/embed" 
+URL="http://localhost:11434/api/embed"
 EMBED_MODEL_NAME="nomic-embed-text:latest"
 
 payload = {

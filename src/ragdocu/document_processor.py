@@ -13,14 +13,10 @@ def chunk_text(text, chunk_size=1000, chunk_overlap=200) -> list[str]:
     step = chunk_size - chunk_overlap
     
     while start < len(text):
-        end = start + chunk_size
-        chunk = text[start:start + chunk_size].strip()
-        
+        chunk = text[start:start+chunk_size].strip()
         if chunk:
             chunks.append(chunk)
-            
-        if end >= len(text):
-            break
+
             
         start += step
     

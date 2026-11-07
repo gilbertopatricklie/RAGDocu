@@ -1,4 +1,4 @@
-def chunk_text(text, chunk_size=500, chunk_overlap=100) -> str:
+def chunk_text(text, chunk_size=500, chunk_overlap=100) -> list[str]:
     
     if chunk_size <= 0:
         raise ValueError("chunk_size harus lebih dari 0")
