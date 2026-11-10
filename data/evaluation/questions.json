@@ -1,0 +1,19 @@
+[
+    {
+        "question": "Apa contoh algoritma supervised learning?",
+        "expected_answer": " Linear Regression, Support Vector Machines (SVM), Decision Tree, Random Forest."
+    },
+    {
+        "question": "Apa contoh algoritma unsupervised learning?",
+        "expected_answer": " K-Means Clustering, Principal Component Analysis (PCA), DBSCAN."
+
+    },
+    {
+        "question": "Apa bedanya Latency dengan Throughput?",
+        "expected_answer": " Latency adalah waktu yang dibutuhkan untuk menyelesaikan satu operasi tunggal, sedangkan Throughput adalah jumlah total operasi yang diselesaikan dalam satu satuan waktu."
+    },
+    {
+        "question": "Apa yang dimaksud dengan learning rate dalam machine?",
+        "expected_answer": "Informasi tidak tersedia dalam dokumen."
+    }
+]

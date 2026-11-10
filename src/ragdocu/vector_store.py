@@ -23,10 +23,10 @@ def store_documents(documents, embeddings):
     print(f"{len(documents)} chunks berhasil disimpan")
     
     
-def search_documents(query_embedding, n_result=3):
+def search_documents(query_embedding, n_results=3):
     results = collection.query(
         query_embeddings=[query_embedding.tolist()],
-        n_results=n_result
+        n_results=n_results
     )
     
     return results

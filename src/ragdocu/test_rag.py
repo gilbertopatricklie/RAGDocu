@@ -1,23 +1,25 @@
 from ragdocu.rag_pipeline import ask_question
 
-question = "Apa yang dimaksud dengan Machine learning?"
+question = "Apa itu machine learning?"
 
-result = ask_question(question)
+result_1 = ask_question(question, top_k=3)
+result_2 = ask_question(question, top_k=5, max_distance=0.35)
+experiments = [
+    ("Top-K 3", result_1),
+    ("Top-K 5 + Threshold 0.5", result_2)
+]
 
-print("\n===== QUESTION =====")
-print(result["question"])
+for name, result in experiments:
+    print(f"\n===== {name} =====")
 
+    print("\nAnswer:")
+    print(result["answer"])
 
-print("\n===== ANSWER =====")
-print(result["answer"])
+    print("\nSources:")
 
-
-print("\n===== SOURCES =====")
-
-for source in result["sources"]:
-
-    print(
-        f"- {source['metadata']['source']}, "
-        f"Page {source['metadata']['page']}, "
-        f"Distance: {source['distance']:.4f}"
-    )
+    for source in result["sources"]:
+        print(
+            source["metadata"]["source"],
+            "Page:", source["metadata"]["page"],
+            "Distance:", round(source["distance"], 4)
+        )
