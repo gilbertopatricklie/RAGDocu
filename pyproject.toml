@@ -14,9 +14,6 @@ dependencies = [
     "requests>=2.34.2",
 ]
 
-[project.scripts]
-ragdocu = "ragdocu:main"
-
 [build-system]
 requires = ["uv_build>=0.13.6,<0.14.0"]
 build-backend = "uv_build"

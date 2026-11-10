@@ -1,5 +1,5 @@
-from document_processor import process_pdf
-from embedding import generate_embeddings
+from ragdocu.document_processor import process_pdf
+from ragdocu.embedding import generate_embeddings
 
 documents = process_pdf("data/documents/sample.pdf")
 print("Total chunks:", len(documents))
