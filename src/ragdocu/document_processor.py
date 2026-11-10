@@ -52,6 +52,10 @@ def process_pdf(pdf_path, chunk_size=1000, chunk_overlap=200) -> list[dict]:
                 
     return documents
 
+#pake kode di bawah ini kalo filenya banyak.
+# for document in Path("data/documents").glob("*.pdf" or "*.txt" or "*.md"):
+#     file = document
+
 if __name__ == "__main__":
     result = process_pdf("data/documents/sample.pdf")
     print("Total chunks: ", len(result))
