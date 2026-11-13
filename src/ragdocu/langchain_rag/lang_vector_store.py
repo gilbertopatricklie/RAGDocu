@@ -3,7 +3,7 @@ from langchain_core.documents import Document
 from ragdocu.langchain_rag.lang_embedding import embeddings
 
 VECTOR_DB_PATH="./chroma_db_langchain"
-COLLECTION_NAME="documents_langchain"
+COLLECTION_NAME="documents_langchain_recursive"
 
 lang_vector_store = Chroma(
     collection_name=COLLECTION_NAME,
@@ -36,3 +36,9 @@ def lang_search_documents(query, k=3):
     results = lang_vector_store.similarity_search_with_score(query=query, k=k)
     
     return results
+
+def get_retriever(k=3):
+    return lang_vector_store.as_retriever(
+        search_type="similarity",
+        search_kwargs={"k": k}
+    )

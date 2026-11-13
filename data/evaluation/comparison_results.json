@@ -1,0 +1,274 @@
+{
+    "manual": [
+        {
+            "question": "Apa contoh algoritma supervised learning?",
+            "expected_answer": " Linear Regression, Support Vector Machines (SVM), Decision Tree, Random Forest.",
+            "answer": "Contoh algoritma supervised learning adalah Linear Regression, Support Vector Machines (SVM), Decision Tree, dan Random Forest.",
+            "source_count": 3,
+            "sources": [
+                {
+                    "text": "si kecerdasan buatan. Selain GPU, Tensor Processing Unit (TPU) diciptakan\nkhusus oleh Google sebagai akselerator ASIC (Application-Specific Integrated Circuit) untuk mempercepat\nbeban kerja jaringan saraf tiruan (neural networks).\n2. Definisi dan Taksonomi Machine Learning (ML)\nMachine Learning (Pembelajaran Mesin) adalah cabang dari Kecerdasan Buatan (AI) yang fokus pada\npengembangan algoritma agar sistem komputer dapat belajar dari data dan meningkatkan akurasi prediksinya\ntanpa diprogram secara eksplisit.\nTiga Paradigma Utama Pembelajaran Mesin:\nSupervised Learning: Model dilatih menggunakan dataset yang memiliki label (ground truth). Contoh\nalgoritma: Linear Regression, Support Vector Machines (SVM), Decision Tree, Random Forest.\nUnsupervised Learning: Model menganalisis data tanpa label untuk menemukan pola tersembunyi\natau struktur data. Contoh algoritma: K-Means Clustering, Principal Component Analysis (PCA),\nDBSCAN.\nReinforcement Learning: Agen belajar mengambil keputusan melal",
+                    "metadata": {
+                        "chunk_id": 1,
+                        "page": 1,
+                        "source": "sample.pdf"
+                    },
+                    "distance": 0.3483008146286011
+                },
+                {
+                    "text": "el untuk menemukan pola tersembunyi\natau struktur data. Contoh algoritma: K-Means Clustering, Principal Component Analysis (PCA),\nDBSCAN.\nReinforcement Learning: Agen belajar mengambil keputusan melalui interaksi dengan lingkungan\nberdasarkan sistem penghargaan (reward) dan hukuman (penalty). Contoh: Q-Learning, Deep Q-\nNetworks (DQN).\n3. Perbandingan Hardware Komputasi AI\nKomponen\nHardware\nKarakteristik Utam\nKelebihan dalam Komputasi\nML\nKasus Penggunaan\nTerbaik\nCPU\nLatency rendah, berorientasi\npada pemrosesan sekuensial\ncepat.\nFleksibel untuk tugas umum\ndan pra-pemrosesan data\nsederhana.\nLogika program umum,\nserial data processing.\nGPU\nThroughput tinggi, ribuan core\nparalel untuk instruksi\nserentak.\nSangat efisien dalam\nperkalian matriks mendalam.\nPelatihan Deep\nLearning, Computer\nVision, LLM.\nRAG Knowledge Base Document — ML & Computer Architecture\nHalaman 1 dari 2",
+                    "metadata": {
+                        "page": 1,
+                        "chunk_id": 2,
+                        "source": "sample.pdf"
+                    },
+                    "distance": 0.3834728002548218
+                },
+                {
+                    "text": "Basis Data Pengetahuan: Machine Learning &\nSistem Komputer\nKategori: Kecerdasan Buatan & Ilmu Komputer\nTarget RAG: Retrieval & Chunking Optimization\n1. Fondasi Arsitektur Komputer dan Perkembangan Perangkat Keras\nSistem komputer modern berdasar pada arsitektur Von Neumann yang terdiri dari tiga komponen dasar utama:\nCentral Processing Unit (CPU), Memori Utam (RAM), dan Perangkat Input/Output (I/O). CPU memproses\ninstruksi melalui siklus fetch-decode-execute.\nDalam era modern, pemrosesan paralel menjadi krusial untuk komputasi tingkat tinggi. Graphics Processing\nUnit (GPU) dirancang dengan ribuan core kecil yang optimal untuk pemrosesan matriks dan vektor secara\nbersamaan (SIMD - Single Instruction, Multiple Data). Hal ini membuat GPU menjadi tulang punggung\ninfrastruktur keras bagi komputasi kecerdasan buatan. Selain GPU, Tensor Processing Unit (TPU) diciptakan\nkhusus oleh Google sebagai akselerator ASIC (Application-Specific Integrated Circuit) untuk mempercepat\nbeban kerja jaringan s",
+                    "metadata": {
+                        "source": "sample.pdf",
+                        "chunk_id": 0,
+                        "page": 1
+                    },
+                    "distance": 0.41607218980789185
+                }
+            ]
+        },
+        {
+            "question": "Apa contoh algoritma unsupervised learning?",
+            "expected_answer": " K-Means Clustering, Principal Component Analysis (PCA), DBSCAN.",
+            "answer": "Contoh algoritma unsupervised learning adalah K-Means Clustering, Principal Component Analysis (PCA), dan DBSCAN.",
+            "source_count": 3,
+            "sources": [
+                {
+                    "text": "si kecerdasan buatan. Selain GPU, Tensor Processing Unit (TPU) diciptakan\nkhusus oleh Google sebagai akselerator ASIC (Application-Specific Integrated Circuit) untuk mempercepat\nbeban kerja jaringan saraf tiruan (neural networks).\n2. Definisi dan Taksonomi Machine Learning (ML)\nMachine Learning (Pembelajaran Mesin) adalah cabang dari Kecerdasan Buatan (AI) yang fokus pada\npengembangan algoritma agar sistem komputer dapat belajar dari data dan meningkatkan akurasi prediksinya\ntanpa diprogram secara eksplisit.\nTiga Paradigma Utama Pembelajaran Mesin:\nSupervised Learning: Model dilatih menggunakan dataset yang memiliki label (ground truth). Contoh\nalgoritma: Linear Regression, Support Vector Machines (SVM), Decision Tree, Random Forest.\nUnsupervised Learning: Model menganalisis data tanpa label untuk menemukan pola tersembunyi\natau struktur data. Contoh algoritma: K-Means Clustering, Principal Component Analysis (PCA),\nDBSCAN.\nReinforcement Learning: Agen belajar mengambil keputusan melal",
+                    "metadata": {
+                        "chunk_id": 1,
+                        "source": "sample.pdf",
+                        "page": 1
+                    },
+                    "distance": 0.35777831077575684
+                },
+                {
+                    "text": "el untuk menemukan pola tersembunyi\natau struktur data. Contoh algoritma: K-Means Clustering, Principal Component Analysis (PCA),\nDBSCAN.\nReinforcement Learning: Agen belajar mengambil keputusan melalui interaksi dengan lingkungan\nberdasarkan sistem penghargaan (reward) dan hukuman (penalty). Contoh: Q-Learning, Deep Q-\nNetworks (DQN).\n3. Perbandingan Hardware Komputasi AI\nKomponen\nHardware\nKarakteristik Utam\nKelebihan dalam Komputasi\nML\nKasus Penggunaan\nTerbaik\nCPU\nLatency rendah, berorientasi\npada pemrosesan sekuensial\ncepat.\nFleksibel untuk tugas umum\ndan pra-pemrosesan data\nsederhana.\nLogika program umum,\nserial data processing.\nGPU\nThroughput tinggi, ribuan core\nparalel untuk instruksi\nserentak.\nSangat efisien dalam\nperkalian matriks mendalam.\nPelatihan Deep\nLearning, Computer\nVision, LLM.\nRAG Knowledge Base Document — ML & Computer Architecture\nHalaman 1 dari 2",
+                    "metadata": {
+                        "chunk_id": 2,
+                        "page": 1,
+                        "source": "sample.pdf"
+                    },
+                    "distance": 0.36944717168807983
+                },
+                {
+                    "text": "Basis Data Pengetahuan: Machine Learning &\nSistem Komputer\nKategori: Kecerdasan Buatan & Ilmu Komputer\nTarget RAG: Retrieval & Chunking Optimization\n1. Fondasi Arsitektur Komputer dan Perkembangan Perangkat Keras\nSistem komputer modern berdasar pada arsitektur Von Neumann yang terdiri dari tiga komponen dasar utama:\nCentral Processing Unit (CPU), Memori Utam (RAM), dan Perangkat Input/Output (I/O). CPU memproses\ninstruksi melalui siklus fetch-decode-execute.\nDalam era modern, pemrosesan paralel menjadi krusial untuk komputasi tingkat tinggi. Graphics Processing\nUnit (GPU) dirancang dengan ribuan core kecil yang optimal untuk pemrosesan matriks dan vektor secara\nbersamaan (SIMD - Single Instruction, Multiple Data). Hal ini membuat GPU menjadi tulang punggung\ninfrastruktur keras bagi komputasi kecerdasan buatan. Selain GPU, Tensor Processing Unit (TPU) diciptakan\nkhusus oleh Google sebagai akselerator ASIC (Application-Specific Integrated Circuit) untuk mempercepat\nbeban kerja jaringan s",
+                    "metadata": {
+                        "page": 1,
+                        "source": "sample.pdf",
+                        "chunk_id": 0
+                    },
+                    "distance": 0.3998020887374878
+                }
+            ]
+        },
+        {
+            "question": "Apa bedanya Latency dengan Throughput?",
+            "expected_answer": " Latency adalah waktu yang dibutuhkan untuk menyelesaikan satu operasi tunggal, sedangkan Throughput adalah jumlah total operasi yang diselesaikan dalam satu satuan waktu.",
+            "answer": "Latency adalah waktu yang dibutuhkan untuk menyelesaikan satu operasi tunggal, sedangkan Throughput adalah jumlah total operasi yang diselesaikan dalam satu satuan waktu.",
+            "source_count": 3,
+            "sources": [
+                {
+                    "text": "operasi\ntunggal, sedangkan Throughput adalah jumlah total operasi yang diselesaikan dalam satu satuan waktu.\nRAG Knowledge Base Document — ML & Computer Architecture\nHalaman 2 dari 2",
+                    "metadata": {
+                        "page": 2,
+                        "chunk_id": 5,
+                        "source": "sample.pdf"
+                    },
+                    "distance": 0.3307691216468811
+                },
+                {
+                    "text": "el untuk menemukan pola tersembunyi\natau struktur data. Contoh algoritma: K-Means Clustering, Principal Component Analysis (PCA),\nDBSCAN.\nReinforcement Learning: Agen belajar mengambil keputusan melalui interaksi dengan lingkungan\nberdasarkan sistem penghargaan (reward) dan hukuman (penalty). Contoh: Q-Learning, Deep Q-\nNetworks (DQN).\n3. Perbandingan Hardware Komputasi AI\nKomponen\nHardware\nKarakteristik Utam\nKelebihan dalam Komputasi\nML\nKasus Penggunaan\nTerbaik\nCPU\nLatency rendah, berorientasi\npada pemrosesan sekuensial\ncepat.\nFleksibel untuk tugas umum\ndan pra-pemrosesan data\nsederhana.\nLogika program umum,\nserial data processing.\nGPU\nThroughput tinggi, ribuan core\nparalel untuk instruksi\nserentak.\nSangat efisien dalam\nperkalian matriks mendalam.\nPelatihan Deep\nLearning, Computer\nVision, LLM.\nRAG Knowledge Base Document — ML & Computer Architecture\nHalaman 1 dari 2",
+                    "metadata": {
+                        "chunk_id": 2,
+                        "page": 1,
+                        "source": "sample.pdf"
+                    },
+                    "distance": 0.37535810470581055
+                },
+                {
+                    "text": "Komponen\nHardware\nKarakteristik Utam\nKelebihan dalam\nKomputasi ML\nKasus Penggunaan Terbaik\nTPU\nASIC teroptimasi penuh\nuntuk arsitektur matriks\nTensor.\nEfisiensi energi dan\nkecepatan ekstrem pada\nskala besar.\nPelatihan dan inferensi Large\nLanguage Models (LLM) di\ncloud.\n4. Glosarium Terminologi Kunci\nOverfitting: Kondisi ketika model ML sangat menghafal data pelatihan sehingga gagal melakukan\ngeneralisasi pada data baru.\nGradient Descent: Algoritma optimasi iteratif yang digunakan untuk meminimalkan fungsi kerugian (loss\nfunction) dalam pemodelan ML.\nTransformer Architecture: Arsitektur deep learning berbasis mekanisme self-attention yang menjadi dasar\ndari Large Language Models (LLM) seperti GPT dan BERT.\nLatency vs Throughput: Latency adalah waktu yang dibutuhkan untuk menyelesaikan satu operasi\ntunggal, sedangkan Throughput adalah jumlah total operasi yang diselesaikan dalam satu satuan waktu.\nRAG Knowledge Base Document — ML & Computer Architecture\nHalaman 2 dari 2",
+                    "metadata": {
+                        "chunk_id": 4,
+                        "page": 2,
+                        "source": "sample.pdf"
+                    },
+                    "distance": 0.3845921754837036
+                }
+            ]
+        },
+        {
+            "question": "Apa yang dimaksud dengan learning rate dalam machine?",
+            "expected_answer": "Informasi tidak tersedia dalam dokumen.",
+            "answer": "Informasi tentang learning rate dalam machine learning tidak ditemukan dalam dokumen.",
+            "source_count": 3,
+            "sources": [
+                {
+                    "text": "si kecerdasan buatan. Selain GPU, Tensor Processing Unit (TPU) diciptakan\nkhusus oleh Google sebagai akselerator ASIC (Application-Specific Integrated Circuit) untuk mempercepat\nbeban kerja jaringan saraf tiruan (neural networks).\n2. Definisi dan Taksonomi Machine Learning (ML)\nMachine Learning (Pembelajaran Mesin) adalah cabang dari Kecerdasan Buatan (AI) yang fokus pada\npengembangan algoritma agar sistem komputer dapat belajar dari data dan meningkatkan akurasi prediksinya\ntanpa diprogram secara eksplisit.\nTiga Paradigma Utama Pembelajaran Mesin:\nSupervised Learning: Model dilatih menggunakan dataset yang memiliki label (ground truth). Contoh\nalgoritma: Linear Regression, Support Vector Machines (SVM), Decision Tree, Random Forest.\nUnsupervised Learning: Model menganalisis data tanpa label untuk menemukan pola tersembunyi\natau struktur data. Contoh algoritma: K-Means Clustering, Principal Component Analysis (PCA),\nDBSCAN.\nReinforcement Learning: Agen belajar mengambil keputusan melal",
+                    "metadata": {
+                        "page": 1,
+                        "source": "sample.pdf",
+                        "chunk_id": 1
+                    },
+                    "distance": 0.2446187138557434
+                },
+                {
+                    "text": "Basis Data Pengetahuan: Machine Learning &\nSistem Komputer\nKategori: Kecerdasan Buatan & Ilmu Komputer\nTarget RAG: Retrieval & Chunking Optimization\n1. Fondasi Arsitektur Komputer dan Perkembangan Perangkat Keras\nSistem komputer modern berdasar pada arsitektur Von Neumann yang terdiri dari tiga komponen dasar utama:\nCentral Processing Unit (CPU), Memori Utam (RAM), dan Perangkat Input/Output (I/O). CPU memproses\ninstruksi melalui siklus fetch-decode-execute.\nDalam era modern, pemrosesan paralel menjadi krusial untuk komputasi tingkat tinggi. Graphics Processing\nUnit (GPU) dirancang dengan ribuan core kecil yang optimal untuk pemrosesan matriks dan vektor secara\nbersamaan (SIMD - Single Instruction, Multiple Data). Hal ini membuat GPU menjadi tulang punggung\ninfrastruktur keras bagi komputasi kecerdasan buatan. Selain GPU, Tensor Processing Unit (TPU) diciptakan\nkhusus oleh Google sebagai akselerator ASIC (Application-Specific Integrated Circuit) untuk mempercepat\nbeban kerja jaringan s",
+                    "metadata": {
+                        "chunk_id": 0,
+                        "page": 1,
+                        "source": "sample.pdf"
+                    },
+                    "distance": 0.2478957176208496
+                },
+                {
+                    "text": "el untuk menemukan pola tersembunyi\natau struktur data. Contoh algoritma: K-Means Clustering, Principal Component Analysis (PCA),\nDBSCAN.\nReinforcement Learning: Agen belajar mengambil keputusan melalui interaksi dengan lingkungan\nberdasarkan sistem penghargaan (reward) dan hukuman (penalty). Contoh: Q-Learning, Deep Q-\nNetworks (DQN).\n3. Perbandingan Hardware Komputasi AI\nKomponen\nHardware\nKarakteristik Utam\nKelebihan dalam Komputasi\nML\nKasus Penggunaan\nTerbaik\nCPU\nLatency rendah, berorientasi\npada pemrosesan sekuensial\ncepat.\nFleksibel untuk tugas umum\ndan pra-pemrosesan data\nsederhana.\nLogika program umum,\nserial data processing.\nGPU\nThroughput tinggi, ribuan core\nparalel untuk instruksi\nserentak.\nSangat efisien dalam\nperkalian matriks mendalam.\nPelatihan Deep\nLearning, Computer\nVision, LLM.\nRAG Knowledge Base Document — ML & Computer Architecture\nHalaman 1 dari 2",
+                    "metadata": {
+                        "chunk_id": 2,
+                        "page": 1,
+                        "source": "sample.pdf"
+                    },
+                    "distance": 0.26817798614501953
+                }
+            ]
+        }
+    ],
+    "langchain": [
+        {
+            "question": "Apa contoh algoritma supervised learning?",
+            "expected_answer": " Linear Regression, Support Vector Machines (SVM), Decision Tree, Random Forest.",
+            "answer": "Contoh algoritma supervised learning adalah Linear Regression, Support Vector Machines (SVM), Decision Tree, dan Random Forest.",
+            "source_count": 3,
+            "sources": [
+                {
+                    "text": "khusus oleh Google sebagai akselerator ASIC (Application-Specific Integrated Circuit) untuk mempercepat\nbeban kerja jaringan saraf tiruan (neural networks).\n2. Definisi dan Taksonomi Machine Learning (ML)\nMachine Learning (Pembelajaran Mesin) adalah cabang dari Kecerdasan Buatan (AI) yang fokus pada\npengembangan algoritma agar sistem komputer dapat belajar dari data dan meningkatkan akurasi prediksinya\ntanpa diprogram secara eksplisit.\nTiga Paradigma Utama Pembelajaran Mesin:\nSupervised Learning: Model dilatih menggunakan dataset yang memiliki label (ground truth). Contoh\nalgoritma: Linear Regression, Support Vector Machines (SVM), Decision Tree, Random Forest.\nUnsupervised Learning: Model menganalisis data tanpa label untuk menemukan pola tersembunyi\natau struktur data. Contoh algoritma: K-Means Clustering, Principal Component Analysis (PCA),\nDBSCAN.\nReinforcement Learning: Agen belajar mengambil keputusan melalui interaksi dengan lingkungan",
+                    "metadata": {
+                        "chunk_id": 1,
+                        "page": 1,
+                        "source": "sample.pdf"
+                    }
+                },
+                {
+                    "text": "atau struktur data. Contoh algoritma: K-Means Clustering, Principal Component Analysis (PCA),\nDBSCAN.\nReinforcement Learning: Agen belajar mengambil keputusan melalui interaksi dengan lingkungan\nberdasarkan sistem penghargaan (reward) dan hukuman (penalty). Contoh: Q-Learning, Deep Q-\nNetworks (DQN).\n3. Perbandingan Hardware Komputasi AI\nKomponen\nHardware\nKarakteristik Utam\nKelebihan dalam Komputasi\nML\nKasus Penggunaan\nTerbaik\nCPU\nLatency rendah, berorientasi\npada pemrosesan sekuensial\ncepat.\nFleksibel untuk tugas umum\ndan pra-pemrosesan data\nsederhana.\nLogika program umum,\nserial data processing.\nGPU\nThroughput tinggi, ribuan core\nparalel untuk instruksi\nserentak.\nSangat efisien dalam\nperkalian matriks mendalam.\nPelatihan Deep\nLearning, Computer\nVision, LLM.\nRAG Knowledge Base Document — ML & Computer Architecture\nHalaman 1 dari 2",
+                    "metadata": {
+                        "source": "sample.pdf",
+                        "page": 1,
+                        "chunk_id": 2
+                    }
+                },
+                {
+                    "text": "Basis Data Pengetahuan: Machine Learning &\nSistem Komputer\nKategori: Kecerdasan Buatan & Ilmu Komputer\nTarget RAG: Retrieval & Chunking Optimization\n1. Fondasi Arsitektur Komputer dan Perkembangan Perangkat Keras\nSistem komputer modern berdasar pada arsitektur Von Neumann yang terdiri dari tiga komponen dasar utama:\nCentral Processing Unit (CPU), Memori Utam (RAM), dan Perangkat Input/Output (I/O). CPU memproses\ninstruksi melalui siklus fetch-decode-execute.\nDalam era modern, pemrosesan paralel menjadi krusial untuk komputasi tingkat tinggi. Graphics Processing\nUnit (GPU) dirancang dengan ribuan core kecil yang optimal untuk pemrosesan matriks dan vektor secara\nbersamaan (SIMD - Single Instruction, Multiple Data). Hal ini membuat GPU menjadi tulang punggung\ninfrastruktur keras bagi komputasi kecerdasan buatan. Selain GPU, Tensor Processing Unit (TPU) diciptakan\nkhusus oleh Google sebagai akselerator ASIC (Application-Specific Integrated Circuit) untuk mempercepat",
+                    "metadata": {
+                        "page": 1,
+                        "chunk_id": 0,
+                        "source": "sample.pdf"
+                    }
+                }
+            ]
+        },
+        {
+            "question": "Apa contoh algoritma unsupervised learning?",
+            "expected_answer": " K-Means Clustering, Principal Component Analysis (PCA), DBSCAN.",
+            "answer": "Contoh algoritma unsupervised learning adalah K-Means Clustering, Principal Component Analysis (PCA), dan DBSCAN.",
+            "source_count": 3,
+            "sources": [
+                {
+                    "text": "khusus oleh Google sebagai akselerator ASIC (Application-Specific Integrated Circuit) untuk mempercepat\nbeban kerja jaringan saraf tiruan (neural networks).\n2. Definisi dan Taksonomi Machine Learning (ML)\nMachine Learning (Pembelajaran Mesin) adalah cabang dari Kecerdasan Buatan (AI) yang fokus pada\npengembangan algoritma agar sistem komputer dapat belajar dari data dan meningkatkan akurasi prediksinya\ntanpa diprogram secara eksplisit.\nTiga Paradigma Utama Pembelajaran Mesin:\nSupervised Learning: Model dilatih menggunakan dataset yang memiliki label (ground truth). Contoh\nalgoritma: Linear Regression, Support Vector Machines (SVM), Decision Tree, Random Forest.\nUnsupervised Learning: Model menganalisis data tanpa label untuk menemukan pola tersembunyi\natau struktur data. Contoh algoritma: K-Means Clustering, Principal Component Analysis (PCA),\nDBSCAN.\nReinforcement Learning: Agen belajar mengambil keputusan melalui interaksi dengan lingkungan",
+                    "metadata": {
+                        "chunk_id": 1,
+                        "page": 1,
+                        "source": "sample.pdf"
+                    }
+                },
+                {
+                    "text": "atau struktur data. Contoh algoritma: K-Means Clustering, Principal Component Analysis (PCA),\nDBSCAN.\nReinforcement Learning: Agen belajar mengambil keputusan melalui interaksi dengan lingkungan\nberdasarkan sistem penghargaan (reward) dan hukuman (penalty). Contoh: Q-Learning, Deep Q-\nNetworks (DQN).\n3. Perbandingan Hardware Komputasi AI\nKomponen\nHardware\nKarakteristik Utam\nKelebihan dalam Komputasi\nML\nKasus Penggunaan\nTerbaik\nCPU\nLatency rendah, berorientasi\npada pemrosesan sekuensial\ncepat.\nFleksibel untuk tugas umum\ndan pra-pemrosesan data\nsederhana.\nLogika program umum,\nserial data processing.\nGPU\nThroughput tinggi, ribuan core\nparalel untuk instruksi\nserentak.\nSangat efisien dalam\nperkalian matriks mendalam.\nPelatihan Deep\nLearning, Computer\nVision, LLM.\nRAG Knowledge Base Document — ML & Computer Architecture\nHalaman 1 dari 2",
+                    "metadata": {
+                        "source": "sample.pdf",
+                        "chunk_id": 2,
+                        "page": 1
+                    }
+                },
+                {
+                    "text": "Basis Data Pengetahuan: Machine Learning &\nSistem Komputer\nKategori: Kecerdasan Buatan & Ilmu Komputer\nTarget RAG: Retrieval & Chunking Optimization\n1. Fondasi Arsitektur Komputer dan Perkembangan Perangkat Keras\nSistem komputer modern berdasar pada arsitektur Von Neumann yang terdiri dari tiga komponen dasar utama:\nCentral Processing Unit (CPU), Memori Utam (RAM), dan Perangkat Input/Output (I/O). CPU memproses\ninstruksi melalui siklus fetch-decode-execute.\nDalam era modern, pemrosesan paralel menjadi krusial untuk komputasi tingkat tinggi. Graphics Processing\nUnit (GPU) dirancang dengan ribuan core kecil yang optimal untuk pemrosesan matriks dan vektor secara\nbersamaan (SIMD - Single Instruction, Multiple Data). Hal ini membuat GPU menjadi tulang punggung\ninfrastruktur keras bagi komputasi kecerdasan buatan. Selain GPU, Tensor Processing Unit (TPU) diciptakan\nkhusus oleh Google sebagai akselerator ASIC (Application-Specific Integrated Circuit) untuk mempercepat",
+                    "metadata": {
+                        "source": "sample.pdf",
+                        "page": 1,
+                        "chunk_id": 0
+                    }
+                }
+            ]
+        },
+        {
+            "question": "Apa bedanya Latency dengan Throughput?",
+            "expected_answer": " Latency adalah waktu yang dibutuhkan untuk menyelesaikan satu operasi tunggal, sedangkan Throughput adalah jumlah total operasi yang diselesaikan dalam satu satuan waktu.",
+            "answer": "Latency adalah waktu yang dibutuhkan untuk menyelesaikan satu operasi tunggal, sedangkan Throughput adalah jumlah total operasi yang diselesaikan dalam satu satuan waktu.",
+            "source_count": 3,
+            "sources": [
+                {
+                    "text": "atau struktur data. Contoh algoritma: K-Means Clustering, Principal Component Analysis (PCA),\nDBSCAN.\nReinforcement Learning: Agen belajar mengambil keputusan melalui interaksi dengan lingkungan\nberdasarkan sistem penghargaan (reward) dan hukuman (penalty). Contoh: Q-Learning, Deep Q-\nNetworks (DQN).\n3. Perbandingan Hardware Komputasi AI\nKomponen\nHardware\nKarakteristik Utam\nKelebihan dalam Komputasi\nML\nKasus Penggunaan\nTerbaik\nCPU\nLatency rendah, berorientasi\npada pemrosesan sekuensial\ncepat.\nFleksibel untuk tugas umum\ndan pra-pemrosesan data\nsederhana.\nLogika program umum,\nserial data processing.\nGPU\nThroughput tinggi, ribuan core\nparalel untuk instruksi\nserentak.\nSangat efisien dalam\nperkalian matriks mendalam.\nPelatihan Deep\nLearning, Computer\nVision, LLM.\nRAG Knowledge Base Document — ML & Computer Architecture\nHalaman 1 dari 2",
+                    "metadata": {
+                        "source": "sample.pdf",
+                        "chunk_id": 2,
+                        "page": 1
+                    }
+                },
+                {
+                    "text": "Komponen\nHardware\nKarakteristik Utam\nKelebihan dalam\nKomputasi ML\nKasus Penggunaan Terbaik\nTPU\nASIC teroptimasi penuh\nuntuk arsitektur matriks\nTensor.\nEfisiensi energi dan\nkecepatan ekstrem pada\nskala besar.\nPelatihan dan inferensi Large\nLanguage Models (LLM) di\ncloud.\n4. Glosarium Terminologi Kunci\nOverfitting: Kondisi ketika model ML sangat menghafal data pelatihan sehingga gagal melakukan\ngeneralisasi pada data baru.\nGradient Descent: Algoritma optimasi iteratif yang digunakan untuk meminimalkan fungsi kerugian (loss\nfunction) dalam pemodelan ML.\nTransformer Architecture: Arsitektur deep learning berbasis mekanisme self-attention yang menjadi dasar\ndari Large Language Models (LLM) seperti GPT dan BERT.\nLatency vs Throughput: Latency adalah waktu yang dibutuhkan untuk menyelesaikan satu operasi\ntunggal, sedangkan Throughput adalah jumlah total operasi yang diselesaikan dalam satu satuan waktu.\nRAG Knowledge Base Document — ML & Computer Architecture\nHalaman 2 dari 2",
+                    "metadata": {
+                        "source": "sample.pdf",
+                        "page": 2,
+                        "chunk_id": 3
+                    }
+                },
+                {
+                    "text": "Basis Data Pengetahuan: Machine Learning &\nSistem Komputer\nKategori: Kecerdasan Buatan & Ilmu Komputer\nTarget RAG: Retrieval & Chunking Optimization\n1. Fondasi Arsitektur Komputer dan Perkembangan Perangkat Keras\nSistem komputer modern berdasar pada arsitektur Von Neumann yang terdiri dari tiga komponen dasar utama:\nCentral Processing Unit (CPU), Memori Utam (RAM), dan Perangkat Input/Output (I/O). CPU memproses\ninstruksi melalui siklus fetch-decode-execute.\nDalam era modern, pemrosesan paralel menjadi krusial untuk komputasi tingkat tinggi. Graphics Processing\nUnit (GPU) dirancang dengan ribuan core kecil yang optimal untuk pemrosesan matriks dan vektor secara\nbersamaan (SIMD - Single Instruction, Multiple Data). Hal ini membuat GPU menjadi tulang punggung\ninfrastruktur keras bagi komputasi kecerdasan buatan. Selain GPU, Tensor Processing Unit (TPU) diciptakan\nkhusus oleh Google sebagai akselerator ASIC (Application-Specific Integrated Circuit) untuk mempercepat",
+                    "metadata": {
+                        "source": "sample.pdf",
+                        "chunk_id": 0,
+                        "page": 1
+                    }
+                }
+            ]
+        },
+        {
+            "question": "Apa yang dimaksud dengan learning rate dalam machine?",
+            "expected_answer": "Informasi tidak tersedia dalam dokumen.",
+            "answer": "Informasi tentang \"learning rate\" dalam machine learning tidak ditemukan dalam dokumen.",
+            "source_count": 3,
+            "sources": [
+                {
+                    "text": "Basis Data Pengetahuan: Machine Learning &\nSistem Komputer\nKategori: Kecerdasan Buatan & Ilmu Komputer\nTarget RAG: Retrieval & Chunking Optimization\n1. Fondasi Arsitektur Komputer dan Perkembangan Perangkat Keras\nSistem komputer modern berdasar pada arsitektur Von Neumann yang terdiri dari tiga komponen dasar utama:\nCentral Processing Unit (CPU), Memori Utam (RAM), dan Perangkat Input/Output (I/O). CPU memproses\ninstruksi melalui siklus fetch-decode-execute.\nDalam era modern, pemrosesan paralel menjadi krusial untuk komputasi tingkat tinggi. Graphics Processing\nUnit (GPU) dirancang dengan ribuan core kecil yang optimal untuk pemrosesan matriks dan vektor secara\nbersamaan (SIMD - Single Instruction, Multiple Data). Hal ini membuat GPU menjadi tulang punggung\ninfrastruktur keras bagi komputasi kecerdasan buatan. Selain GPU, Tensor Processing Unit (TPU) diciptakan\nkhusus oleh Google sebagai akselerator ASIC (Application-Specific Integrated Circuit) untuk mempercepat",
+                    "metadata": {
+                        "source": "sample.pdf",
+                        "page": 1,
+                        "chunk_id": 0
+                    }
+                },
+                {
+                    "text": "khusus oleh Google sebagai akselerator ASIC (Application-Specific Integrated Circuit) untuk mempercepat\nbeban kerja jaringan saraf tiruan (neural networks).\n2. Definisi dan Taksonomi Machine Learning (ML)\nMachine Learning (Pembelajaran Mesin) adalah cabang dari Kecerdasan Buatan (AI) yang fokus pada\npengembangan algoritma agar sistem komputer dapat belajar dari data dan meningkatkan akurasi prediksinya\ntanpa diprogram secara eksplisit.\nTiga Paradigma Utama Pembelajaran Mesin:\nSupervised Learning: Model dilatih menggunakan dataset yang memiliki label (ground truth). Contoh\nalgoritma: Linear Regression, Support Vector Machines (SVM), Decision Tree, Random Forest.\nUnsupervised Learning: Model menganalisis data tanpa label untuk menemukan pola tersembunyi\natau struktur data. Contoh algoritma: K-Means Clustering, Principal Component Analysis (PCA),\nDBSCAN.\nReinforcement Learning: Agen belajar mengambil keputusan melalui interaksi dengan lingkungan",
+                    "metadata": {
+                        "page": 1,
+                        "chunk_id": 1,
+                        "source": "sample.pdf"
+                    }
+                },
+                {
+                    "text": "atau struktur data. Contoh algoritma: K-Means Clustering, Principal Component Analysis (PCA),\nDBSCAN.\nReinforcement Learning: Agen belajar mengambil keputusan melalui interaksi dengan lingkungan\nberdasarkan sistem penghargaan (reward) dan hukuman (penalty). Contoh: Q-Learning, Deep Q-\nNetworks (DQN).\n3. Perbandingan Hardware Komputasi AI\nKomponen\nHardware\nKarakteristik Utam\nKelebihan dalam Komputasi\nML\nKasus Penggunaan\nTerbaik\nCPU\nLatency rendah, berorientasi\npada pemrosesan sekuensial\ncepat.\nFleksibel untuk tugas umum\ndan pra-pemrosesan data\nsederhana.\nLogika program umum,\nserial data processing.\nGPU\nThroughput tinggi, ribuan core\nparalel untuk instruksi\nserentak.\nSangat efisien dalam\nperkalian matriks mendalam.\nPelatihan Deep\nLearning, Computer\nVision, LLM.\nRAG Knowledge Base Document — ML & Computer Architecture\nHalaman 1 dari 2",
+                    "metadata": {
+                        "chunk_id": 2,
+                        "source": "sample.pdf",
+                        "page": 1
+                    }
+                }
+            ]
+        }
+    ]
+}

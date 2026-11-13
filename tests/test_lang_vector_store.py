@@ -1,8 +1,8 @@
-from ragdocu.document_processor import process_pdf
+from ragdocu.langchain_rag.lang_document_processor import lang_process_pdf
 from ragdocu.langchain_rag.lang_vector_store import lang_store_documents, lang_search_documents
 
 def main():
-    documents = process_pdf("data/documents/sample.pdf")
+    documents = lang_process_pdf("data/documents/sample.pdf")
     
     lang_store_documents(documents)
     
