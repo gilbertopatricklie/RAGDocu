@@ -3,51 +3,60 @@ from ragdocu.vector_store import search_documents as manual_search
 from ragdocu.langchain_rag.lang_vector_store import lang_search_documents as langchain_search
 
 
+
 TEST_CASES = [
-    # IN-SCOPE
     {
         "question": "Apa contoh algoritma supervised learning?",
-        "relevant_pages": [1],
+        "manual_relevant_chunks": [(1, 1)],
+        "langchain_relevant_chunks": [(1, 1)],
     },
     {
         "question": "Sebutkan algoritma yang termasuk supervised learning.",
-        "relevant_pages": [1],
+        "manual_relevant_chunks": [(1, 1)],
+        "langchain_relevant_chunks": [(1, 1)],
     },
     {
         "question": "Apa contoh algoritma unsupervised learning?",
-        "relevant_pages": [1],
+        "manual_relevant_chunks": [(1, 1)],
+        "langchain_relevant_chunks": [(1, 1)],
     },
     {
         "question": "Jelaskan perbedaan latency dan throughput.",
-        "relevant_pages": [2],
+        "manual_relevant_chunks": [(2, 4)],
+        "langchain_relevant_chunks": [(2, 3)],
     },
     {
         "question": "Apa pengertian throughput?",
-        "relevant_pages": [2],
+        "manual_relevant_chunks": [(2, 4)],
+        "langchain_relevant_chunks": [(2, 3)],
     },
     {
         "question": "Apa pengertian latency?",
-        "relevant_pages": [2],
+        "manual_relevant_chunks": [(2, 4)],
+        "langchain_relevant_chunks": [(2, 3)],
     },
-
-    # OUT-OF-SCOPE
     {
         "question": "Apa yang dimaksud dengan learning rate?",
-        "relevant_pages": [],
+        "manual_relevant_chunks": [],
+        "langchain_relevant_chunks": [],
     },
     {
         "question": "Bagaimana cara kerja convolutional neural network?",
-        "relevant_pages": [],
+        "manual_relevant_chunks": [],
+        "langchain_relevant_chunks": [],
     },
     {
         "question": "Siapa presiden Indonesia saat ini?",
-        "relevant_pages": [],
+        "manual_relevant_chunks": [],
+        "langchain_relevant_chunks": [],
     },
     {
         "question": "Bagaimana cara memasak nasi goreng?",
-        "relevant_pages": [],
+        "manual_relevant_chunks": [],
+        "langchain_relevant_chunks": [],
     },
 ]
+
 
 def retrieve_manual(question, k):
     query_embedding = manual_embed([question])[0]
@@ -85,18 +94,24 @@ def retrieve_langchain(question, k):
         
     return retrieved
 
+
 def evaluate_system(system_name, retrieve_function, k=3):
     total_hits = 0
     total_in_scope = 0
     reciprocal_ranks = []
 
+    if system_name == "Manual RAG":
+        relevance_key = "manual_relevant_chunks"
+    else:
+        relevance_key = "langchain_relevant_chunks"
+
     print(f"\n{'=' * 60}")
-    print(f"{system_name} - Retrieval Evaluation")
+    print(f"{system_name} - Chunk-Level Retrieval Evaluation")
     print(f"{'=' * 60}")
 
     for test_case in TEST_CASES:
         question = test_case["question"]
-        relevant_pages = test_case["relevant_pages"]
+        relevant_chunks = test_case[relevance_key]
 
         retrieved = retrieve_function(question, k)
 
@@ -110,7 +125,7 @@ def evaluate_system(system_name, retrieve_function, k=3):
                 f"Distance {document['distance']:.4f}"
             )
 
-        if not relevant_pages:
+        if not relevant_chunks:
             print("  Evaluation: OUT OF SCOPE")
             continue
 
@@ -119,7 +134,12 @@ def evaluate_system(system_name, retrieve_function, k=3):
         relevant_rank = None
 
         for rank, document in enumerate(retrieved, start=1):
-            if document["page"] in relevant_pages:
+            chunk_identity = (
+                document["page"],
+                document["chunk_id"]
+            )
+
+            if chunk_identity in relevant_chunks:
                 relevant_rank = rank
                 break
 
@@ -141,7 +161,6 @@ def evaluate_system(system_name, retrieve_function, k=3):
     print(f"\nHit Rate@{k}: {hit_rate:.2%}")
     print(f"MRR@{k}: {mrr:.4f}")
     print(f"Hits: {total_hits}/{total_in_scope}")
-    
 
 
 def evaluate_threshold(
@@ -149,6 +168,11 @@ def evaluate_threshold(
     retrieve_function,
     thresholds,
 ):
+    if system_name == "Manual RAG":
+        relevance_key = "manual_relevant_chunks"
+    else:
+        relevance_key = "langchain_relevant_chunks"
+
     print(f"\n{'=' * 60}")
     print(f"{system_name} - Threshold Evaluation")
     print(f"{'=' * 60}")
@@ -161,9 +185,8 @@ def evaluate_threshold(
 
         for test_case in TEST_CASES:
             question = test_case["question"]
-            is_in_scope = bool(test_case["relevant_pages"])
+            is_in_scope = bool(test_case[relevance_key])
 
-            
             retrieved = retrieve_function(question, 1)
 
             if not retrieved:
@@ -171,7 +194,6 @@ def evaluate_threshold(
             else:
                 distance = retrieved[0]["distance"]
 
-            
             predicted_accept = distance <= threshold
 
             if is_in_scope and predicted_accept:
@@ -208,7 +230,6 @@ def evaluate_threshold(
         print(f"Recall: {recall:.2%}")
         print(f"F1-score: {f1:.2%}")
         print(f"Balanced Accuracy: {balanced_accuracy:.2%}")
-
 
         
 if __name__ == "__main__":
