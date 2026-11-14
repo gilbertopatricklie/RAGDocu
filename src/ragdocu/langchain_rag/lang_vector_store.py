@@ -25,10 +25,15 @@ def lang_store_documents(documents):
     
     ids = [document["id"] for document in documents]
     
-    lang_vector_store.add_documents(
-        documents=langchain_documents,
-        ids=ids
-    )
+    try: 
+        lang_vector_store.add_documents(
+            documents=langchain_documents,
+            ids=ids
+        )
+        
+    except Exception:
+        lang_delete_documents(ids)
+        raise
     
     print(f"{len(documents)} chunks berhasil disimpan")
     
@@ -36,6 +41,10 @@ def lang_search_documents(query, k=3):
     results = lang_vector_store.similarity_search_with_score(query=query, k=k)
     
     return results
+
+def lang_delete_documents(ids):
+    if ids:
+        lang_vector_store.delete(ids=ids)
 
 def get_retriever(k=3):
     return lang_vector_store.as_retriever(
