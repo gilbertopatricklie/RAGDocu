@@ -16,7 +16,8 @@ rag_prompt = ChatPromptTemplate.from_template(
     berdasarkan dokumen yang diberikan.
 
     Gunakan hanya informasi dari CONTEXT.
-    Jika informasi tidak tersedia dalam CONTEXT,
+    
+    Jika informasi sama sekali tidak tersedia dalam CONTEXT,
     katakan bahwa informasi tersebut tidak ditemukan
     dalam dokumen.
 
