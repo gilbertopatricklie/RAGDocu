@@ -51,3 +51,12 @@ def get_retriever(k=3):
         search_type="similarity",
         search_kwargs={"k": k}
     )
+    
+def document_exists(file_hash):
+    result = lang_vector_store.get(
+        where={"file_hash": file_hash},
+        include=["metadatas"],
+        limit=1
+    )
+    
+    return len(result["ids"]) > 0

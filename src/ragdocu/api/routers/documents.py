@@ -1,10 +1,12 @@
 import shutil
+import hashlib
 
 from pathlib import Path
 from uuid import uuid4
 from fastapi import APIRouter, UploadFile, File, HTTPException
 from ragdocu.langchain_rag.lang_document_processor import lang_process_pdf
-from ragdocu.langchain_rag.lang_vector_store import lang_store_documents
+from ragdocu.langchain_rag.lang_vector_store import lang_store_documents, document_exists
+from fastapi import APIRouter, UploadFile, File, HTTPException
 
 
 router = APIRouter(prefix="/documents", tags=["Documents"])
@@ -48,7 +50,18 @@ def upload_document(file: UploadFile = File(...)):
                 raise HTTPException(status_code=400, detail="File yang diunduh bukan PDF yang valid")
             
             try:
+                file_hash = calculate_file_hash(file_path)
+                
+                if document_exists(file_hash):
+                    raise HTTPException(status_code=409, detail="Dokumen dengan konten serupa pernah diupload")
+                
                 documents = lang_process_pdf(file_path)
+                
+                if not documents:
+                    raise HTTPException(status_code=400, detail="Tidak ada teks yang bisa diekstrak")
+                
+                for document in documents:
+                    document["metadata"]["file_hash"] = file_hash
                 
             except Exception as error:
                 raise HTTPException(status_code=400, detail="PDF tidak dapat diproses") from error
@@ -78,3 +91,12 @@ def upload_document(file: UploadFile = File(...)):
     finally:
         if file_path:
             file_path.unlink(missing_ok=True)
+            
+def calculate_file_hash(file_path):
+    sha256 = hashlib.sha256()
+    
+    with open(file_path, "rb") as file:
+        for chunk in iter(lambda: file.read(1024 * 1024), b""):
+            sha256.update(chunk)
+            
+    return sha256.hexdigest()
