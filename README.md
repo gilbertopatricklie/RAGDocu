@@ -2,7 +2,7 @@
 
 A local Retrieval-Augmented Generation (RAG) application that allows users to upload PDF documents and ask questions based on their contents.
 
-DocuMind AI uses locally running language models through Ollama, so it does not require paid LLM APIs or external AI services.
+RAGDocu uses locally running language models through Ollama, so it does not require paid LLM APIs or external AI services.
 
 ## Features
 
