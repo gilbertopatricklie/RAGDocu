@@ -1,4 +1,4 @@
-# DocuMind AI
+# RAGDocu
 
 A local Retrieval-Augmented Generation (RAG) application that allows users to upload PDF documents and ask questions based on their contents.
 
