@@ -162,7 +162,7 @@ The project uses a manually implemented RAG pipeline as a learning foundation an
 
 - Ollama must be running locally before using the application.
 - The application uses local models and does not require paid LLM APIs.
-- The default retrieval configuration uses Top-K = 4.
+- The default retrieval configuration uses Top-K = 3. But you can simply adjust it to fulfill your condition/needs
 - Uploaded PDFs are processed into chunks and stored in ChromaDB.
 - The application currently supports text-based PDFs. Scanned PDFs requiring OCR are not supported.
 - The frontend conversation history is session-based and is not persisted across sessions.
