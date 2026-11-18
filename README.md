@@ -80,7 +80,7 @@ uv sync
 
 ### 3. Download Ollama models
 
-Make sure Ollama is installed and running, then execute:
+Make sure Ollama is installed and running, then on windows command prompt execute:
 
 ```bash
 ollama pull qwen3:4b-instruct
